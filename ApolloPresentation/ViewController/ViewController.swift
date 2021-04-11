@@ -79,7 +79,8 @@ extension LaunchViewController: UITableViewDataSource {
 
         let launch = self.launches[indexPath.row]
         cell.update(launchId: launch.id,
-                    launchSite: launch.site)
+                    launchSite: launch.site,
+                    spaceShip: launch.rocket?.name)
 
         return cell
     }
